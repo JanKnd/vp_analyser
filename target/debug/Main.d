@@ -1,0 +1,1 @@
+D:\Schule\VertretungsplanGrabber\VP-analyser\target\debug\Main.exe: D:\Schule\VertretungsplanGrabber\VP-analyser\src\data.rs D:\Schule\VertretungsplanGrabber\VP-analyser\src\main.rs D:\Schule\VertretungsplanGrabber\VP-analyser\src\pdf_parser.rs D:\Schule\VertretungsplanGrabber\VP-analyser\src\vp_update.rs
