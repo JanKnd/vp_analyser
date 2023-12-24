@@ -1,0 +1,11 @@
+D:\Schule\VertretungsplanGrabber\VP-analyser\target\debug\deps\pdf_extract-6f3ff6f0b63df7bf.rmeta: C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\lib.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\core_fonts.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\glyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\zapfglyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\encodings.rs
+
+D:\Schule\VertretungsplanGrabber\VP-analyser\target\debug\deps\libpdf_extract-6f3ff6f0b63df7bf.rlib: C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\lib.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\core_fonts.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\glyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\zapfglyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\encodings.rs
+
+D:\Schule\VertretungsplanGrabber\VP-analyser\target\debug\deps\pdf_extract-6f3ff6f0b63df7bf.d: C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\lib.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\core_fonts.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\glyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\zapfglyphnames.rs C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\encodings.rs
+
+C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\lib.rs:
+C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\core_fonts.rs:
+C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\glyphnames.rs:
+C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\zapfglyphnames.rs:
+C:\Users\janku\.cargo\registry\src\index.crates.io-6f17d22bba15001f\pdf-extract-0.7.2\src\encodings.rs:
