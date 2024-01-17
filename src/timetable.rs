@@ -11,11 +11,11 @@ use execute::{command, Execute};
 //Timetabel::new() returns right timetable for a and b week
 #[derive(Debug)]
 pub struct Timetable{
-    pub montag: Vec<String>,
-    pub dienstag: Vec<String>,
-    pub mittwoch: Vec<String>,
-    pub donnerstag: Vec<String>,
-    pub freitag: Vec<String>
+    pub mon: Vec<String>,
+    pub tue: Vec<String>,
+    pub wed: Vec<String>,
+    pub thu: Vec<String>,
+    pub fri: Vec<String>
 }
 
 impl Timetable{
@@ -29,11 +29,11 @@ impl Timetable{
         }
         let tt_2dvec: Vec<Vec<String>> = record_vec_to_2dvec(read_csv(&path));
         Timetable{
-            montag: tt_2dvec[0].clone(),
-            dienstag: tt_2dvec[1].clone(),
-            mittwoch: tt_2dvec[2].clone(),
-            donnerstag: tt_2dvec[3].clone(),
-            freitag: tt_2dvec[4].clone()
+            mon: tt_2dvec[0].clone(),
+            tue: tt_2dvec[1].clone(),
+            wed: tt_2dvec[2].clone(),
+            thu: tt_2dvec[3].clone(),
+            fri: tt_2dvec[4].clone()
         }
     }
 }
@@ -85,9 +85,3 @@ pub fn record_vec_to_2dvec(record_vec: Vec<StringRecord>) -> Vec<Vec<String>>{
     result
 }
 
-pub fn update_vp(){
-    const MOODLE_DL_PATH: &str = "D:/Schule/VertretungsplanGrabber/VP-analyser";
-    let mut update = Command::new(MOODLE_DL_PATH);
-    update.arg("moodle-dl");
-    print!("{:?}",update.execute_output().unwrap())
-}

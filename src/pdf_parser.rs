@@ -1,35 +1,24 @@
-use std::fs::DirEntry;
-
+use chrono::{Datelike, Local, Weekday};
 #[derive(Debug)]
-pub struct Vertretungsplaene{
-    pub montag: String,
-    pub dienstag: String,
-    pub mittwoch: String,
-    pub donnerstag: String,
-    pub freitag: String
+
+
+pub struct Vertretungsplan{
+    pub vp: String,
 }
 
-impl Vertretungsplaene{
-    pub fn new() -> Vertretungsplaene{
-        Vertretungsplaene{
-            montag: pdf_extract::extract_text("VP/Montag/Montag S.pdf").unwrap().to_string(),
-            dienstag: pdf_extract::extract_text("VP/Dienstag/Dienstag S.pdf").unwrap().to_string(),
-            mittwoch: pdf_extract::extract_text("VP/Mittwoch/Mittwoch S.pdf").unwrap().to_string(),
-            donnerstag:pdf_extract::extract_text("VP/Donnerstag/Donnerstag S.pdf").unwrap().to_string(),
-            freitag:pdf_extract::extract_text("VP/Donnerstag/Donnerstag S.pdf").unwrap().to_string()
+impl Vertretungsplan{
+
+    pub fn get_day(day: Weekday) -> Vertretungsplan{
+        match day {
+            Weekday::Mon => Vertretungsplan { vp: pdf_extract::extract_text("VP/Montag/Montag S.pdf").unwrap().to_string() },
+            Weekday::Tue => Vertretungsplan {vp: pdf_extract::extract_text("VP/Dienstag/Dienstag S.pdf").unwrap().to_string()},
+            Weekday::Wed => Vertretungsplan {vp: pdf_extract::extract_text("VP/Mittwoch/Mittwoch S.pdf").unwrap().to_string()},
+            Weekday::Thu => Vertretungsplan {vp: pdf_extract::extract_text("VP/Donnerstag/Donnerstag S.pdf").unwrap().to_string()},
+            Weekday::Fri => Vertretungsplan {vp: pdf_extract::extract_text("VP/Donnerstag/Donnerstag S.pdf").unwrap().to_string()},
+            Weekday::Sat | Weekday::Sun => panic!("please enter a workday")
         }
     }
-
-    pub fn all(&self) -> String {
-        format!("Montag:{}\
-                Dienstag:{}\
-                Mittwoch{}\
-                Donnerstag:{}\
-                Freitag:{}",self.montag,self.dienstag,self.mittwoch,self.donnerstag,self.freitag)
+    pub fn get_today() -> Vertretungsplan {
+        Vertretungsplan::get_day(Local::now().weekday())
     }
-
-    pub fn to_tuple(self) -> (String,String,String,String,String){
-        (self.montag,self.dienstag,self.mittwoch,self.donnerstag,self.freitag)
-    }
-
 }
