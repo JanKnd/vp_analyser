@@ -5,7 +5,7 @@ use std::str;
 use std::string::String;
 use csv::{Reader, StringRecord};
 
-//Timetabel::new() returns right timetable for a and b week
+//Timetable::new() returns right timetable for a and b week
 #[derive(Debug)]
 pub struct Timetable{
     pub mon: Vec<Vec<char>>,
