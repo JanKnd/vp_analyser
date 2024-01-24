@@ -1,21 +1,5 @@
 use chrono::Local;
 use crate::vp_parser::Vertretungsplan;
-#[derive(Debug)]
-pub struct Dates{
-    pub today: Vec<char>,
-    pub tomorrow: Vec<char>,
-    pub overmorrow: Vec<char>
-}
-
-impl Dates{
-    pub fn new() -> Dates{
-        Dates{
-            today: get_dates_after_td(0),
-            tomorrow: get_dates_after_td(1),
-            overmorrow: get_dates_after_td(2)
-        }
-    }
-}
 
 pub fn get_dates_after_td(num_days: u8) -> Vec<char>{
     let mut curr_date = Local::now().date_naive();
@@ -25,7 +9,6 @@ pub fn get_dates_after_td(num_days: u8) -> Vec<char>{
     let formatted_date = format!("{}",curr_date.format("%d.%m.")).chars().collect();
     formatted_date
 }
-
 pub fn search_for_char_from_index_on(text_file: &Vec<char>, character: &char, start_index: Option<usize>) -> Option<usize>{
     let mut start_index= start_index.unwrap_or(0);
     let text_size : usize = text_file.len();
@@ -38,15 +21,6 @@ pub fn search_for_char_from_index_on(text_file: &Vec<char>, character: &char, st
         }
     }
     return None;
-}
-
-/*
-//returns true if date is in vertretungsplan
-pub fn check_date(curr_vp: &Vertretungsplan.vp, date: &Vec<char>) -> bool{
-    if search_for_char_from_index_on(&curr_vp, date[0],Option::None){
-
-    }
-    true
 }
 
 /*
@@ -65,5 +39,4 @@ pub fn get_weekdays() -> [String; 3] {
     return [NaiveDate::weekday(&curr_day).to_string(),next_day.weekday().to_string(),next_next_day.weekday().to_string()]
 }
 
-*/
 */
