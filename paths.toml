@@ -1,0 +1,7 @@
+odd_timetable = 'timetables/timetabel_odd.csv'
+even_timetable = 'timetables/timetabel_even.csv'
+monday = 'VP/Montag/Montag S.pdf'
+tuesday = 'VP/Dienstag/Dienstag S.pdf'
+wednesday = 'VP/Mittwoch/Mittwoch S.pdf'
+thursday = 'VP/Donnerstag/Donnerstag S.pdf'
+friday = 'VP/Freitag/Freitag S.pdf'
