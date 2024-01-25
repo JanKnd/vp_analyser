@@ -5,3 +5,4 @@ tuesday = 'VP/Dienstag/Dienstag S.pdf'
 wednesday = 'VP/Mittwoch/Mittwoch S.pdf'
 thursday = 'VP/Donnerstag/Donnerstag S.pdf'
 friday = 'VP/Freitag/Freitag S.pdf'
+does_update = false

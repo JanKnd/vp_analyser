@@ -1,4 +1,4 @@
-use serde_derive::Deserialize;
+use serde_derive::{Deserialize};
 use std::fs;
 use std::path::Path;
 use std::process::exit;
@@ -12,7 +12,8 @@ pub struct Paths{
     pub tuesday: String,
     pub wednesday: String,
     pub thursday: String,
-    pub friday: String
+    pub friday: String,
+    pub does_update: bool
 }
 pub fn get_paths() -> Paths{
     let filename:&str = "paths.toml";
