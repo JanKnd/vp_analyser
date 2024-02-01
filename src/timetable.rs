@@ -4,6 +4,7 @@ use std::path::Prefix::Verbatim;
 use std::str;
 use std::string::String;
 use csv::{Reader, StringRecord};
+use crate::{CONFIG, vp_analyser_config};
 
 //Timetable::new() returns right timetable for a and b week
 #[derive(Debug)]
@@ -20,9 +21,9 @@ impl Timetable{
         let week_num:u32 = Local::now().iso_week().week();
         let mut path = String::new();
         if week_num%2 != 0{
-            path = "timetabel_odd.csv".to_string();
+            path = CONFIG.odd_timetable.to_string();
         } else {
-            path = "timetabel_even.csv".to_string();
+            path = CONFIG.even_timetable.to_string();
         }
         let tt_2dvec: Vec<Vec<Vec<char>>> = record_vec_to_2dvec(read_csv(&path));
         Timetable{

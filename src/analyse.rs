@@ -1,5 +1,4 @@
 use chrono::Local;
-use crate::vp_parser::Vertretungsplan;
 
 pub fn get_dates_after_td(num_days: u8) -> Vec<char>{
     let mut curr_date = Local::now().date_naive();
